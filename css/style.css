@@ -8,4 +8,18 @@
     box-sizing: border-box;
 }
 
+#textmanipul {
+    background-color: aqua;
+}
 
+#textmanipul2 {
+    background-color: rgb(14, 126, 126);
+}
+
+#textmanipul3 {
+    background-color: rgb(6, 63, 63);
+}
+
+#primeNr {
+    background-color: rgb(56, 245, 9);
+}
