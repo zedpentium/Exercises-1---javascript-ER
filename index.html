@@ -24,7 +24,7 @@
         <p>Type in year, it will check to see if its a leapyear. And IF 1st January is a sunday:</p>
         <form action="#">
             <input type="text" id="inputyear">
-            <input type="button" value="Check the year" onclick="checkIfLeapYear();"/>
+            <input type="button" value="Check the year" onclick="checkIfLeapYear();">
         </form>
         <p id="resultofcheck"></p>
         <p id="resultOfFirstJanCheck"></p>
@@ -36,7 +36,7 @@
     <p>Guessing game. Guess a number from 1 to 10:</p>
     <form action="#">
         <input type="text" id="inputNrGuess">
-        <input type="button" value="Check it" onclick="checkGuessedNr();"/>
+        <input type="button" value="Check it" onclick="checkGuessedNr();">
     </form>
     <p id="resultofguess"></p>
     <br>
@@ -54,7 +54,7 @@
     <p>Input some letters or/and numbers, click button and it will be shown reversed:</p>
     <form action="#">
         <input type="text" id="inputNrAndLetters">
-        <input type="button" value="Submit" onclick="reverseUserInput();"/>
+        <input type="button" value="Submit" onclick="reverseUserInput();">
     </form>
     <p id="reversedResulOfInput"></p>
     <br>
@@ -65,7 +65,7 @@
     <p>Input some letters, and it will show all combinations of the text:</p>
     <form action="#">
         <input type="text" id="inputUserText">
-        <input type="button" value="Submit" onclick="textmanipulUserInput();"/>
+        <input type="button" value="Submit" onclick="textmanipulUserInput();">
     </form>
     <p id="textmanipulResult"></p>
     <br>
@@ -75,25 +75,116 @@
     <p>Input some letters/word, and it will convert to lowercasem and sort them alphabetically:</p>
     <form action="#">
         <input type="text" id="inputUserText2">
-        <input type="button" value="Submit" onclick="textmanipulUserInput2();"/>
+        <input type="button" value="Submit" onclick="textmanipulUserInput2();">
     </form>
     <p id="textmanipulResult2"></p>
     <br>
 </div>
 
-
-<div id="primeNr">
-    <p>Input some words, and it will Put uppercase on first letter of each word:</p>
+<div id="textmanipul3">
+    <p>Exercise 9 - Input some words, and it will Put uppercase on first letter of each word::</p>
     <form action="#">
-        <input type="text" id="inputNumberToCheck">
-        <input type="button" value="Submit" onclick="primeNrUserInput();"/>
+        <input type="text" id="inputUserText3">
+        <input type="button" value="Submit" onclick="textmanipulUserInput3();">
     </form>
-    <p id="primeNrResult3"></p>
+    <p id="textmanipulResult3"></p>
     <br>
 </div>
 
+<div id="primeNr"> <!-- Exercise 10 -->
+    <p>Exercise 10 - Input number, to see if its a prime number:</p>
+    <form action="#">
+        <input type="number" id="inputNumberToCheck">
+        <input type="button" value="Submit" onclick="primeNrUserInput();">
+    </form>
+    <p id="primeNrResult"></p>
+    <br>
+</div>
 
+<div id="valueType"> <!-- Exercise 11 -->
+    <p>Exercise 11 - Input number or letter, and run check what type it is:</p>
+    <form action="#">
+        <input type="text" id="inputValueToCheck">
+        <input type="button" value="Submit" onclick="checkValueUserInput(document.getElementById('inputValueToCheck').value)">
+    </form>
+    <p id="valueTypeOF"></p>
+    <br>
+</div>
 
+<div id="oddAndEven"> <!-- Exercise 12 -->
+    <p>Exercise 12 - Number 0-15 in a loop, output what is odd and even:</p>
+    <form action="#">
+        <input type="button" value="Show Me" onclick="checkOddAndEvenUserInput();">
+    </form>
+    <p id="oddAndEvenResult"></p>
+    <br>
+</div>
+
+<div id="tenHappy"> <!-- Exercise 13 -->
+    <p>Exercise 13 - Calculate and show the first 10 calculated happy numbers, starting from 1 and up:</p>
+    <form action="#">
+        <input type="button" value="Show Me" onclick="tenHappyNumbers();">
+    </form>
+    <p id="outputhappyResult"></p>
+    <br>
+</div>
+
+<div id="combineArrayToString"> <!-- Exercise 14 -->
+    <p>Exercise 14 - Combine/join array-elements to string and show:</p>
+    <form action="#">
+        <input type="button" value="Show Me" onclick="joinArrayToString();">
+    </form>
+    <p id="joinArrayToStringResult"></p>
+    <br>
+</div>
+
+<div id="sortNrArrayDiv"> <!-- Exercise 15 -->
+    <p>Exercise 15 - Sort input from smallest to biggest and show:</p>
+    <form action="#">
+        <input type="number" id="inputSortNrArray" value="4, 1, 9, -2, 5">
+        <input type="button" value="Show Me" onclick="sortNrArray();">
+    </form>
+    <p id="sortNrArrayResult"></p>
+    <br>
+</div>
+
+<div id="arrayRemoveDuplicates"> <!-- Exercise 16 -->
+    <p>Exercise 16 - Find duplicates, save them, remove them, show array without dups:</p>
+    <form action="#">
+        <input type="text" id="inputarrayRemoveDuplicates" value="4, 1, 9, -2, 5, 5, 9">
+        <input type="button" value="Show Me" onclick="RemoveDuplicates();">
+    </form>
+    <p id="RemoveDuplicatesResult"></p>
+    <br>
+</div>
+
+<div id="arrayRemoveNullZero"> <!-- Exercise 17 -->
+    <p>Exercise 17 - Find and remove null and 0 in array:</p>
+    <form action="#">
+        <input type="text" id="inputarrayRemoveNullZero" value="4, 1, null, -2, 5, 0, 9, 0, null">
+        <input type="button" value="Show Me" onclick="arrayRemoveNullZero();">
+    </form>
+    <p id="arrayRemoveNullZeroResult"></p>
+    <br>
+</div>
+
+<div  class="grid-container" id="daysInMonth"> <!-- Exercise 18 -->
+    <p>Exercise 17 - Find and remove null and 0 in array:</p>
+    <form action="#">
+
+        <div class="grid-item"><label for="inputMonth">Month</label><br>
+        <input type="number" id="inputMonth" value="00">
+    </div>
+        <div class="grid-item">
+        <label for="inputYear">Year</label><br>
+        <input type="number" id="inputYear" value="2000"><br><br>
+    </div>
+
+        <input type="button" value="Show Me" onclick="daysInMonth();">
+    </form>
+    <p id="daysInMonthResult"></p>
+    <br>
+</div>
 
 </div> <!-- content end -->
 
