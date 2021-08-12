@@ -169,20 +169,20 @@
 </div>
 
 <div  class="grid-container" id="daysInMonth"> <!-- Exercise 18 -->
-    <p>Exercise 17 - Find and remove null and 0 in array:</p>
+    <p class="grid-headpara">Exercise 18 - Find number of days in a month of a year:</p>
     <form action="#">
 
-        <div class="grid-item"><label for="inputMonth">Month</label><br>
-        <input type="number" id="inputMonth" value="00">
-    </div>
-        <div class="grid-item">
+        <div class="grid-input"><label for="inputMonth">Month</label><br>
+        <input type="number" id="inputMonth" value="12" min="1" max="12">
+        </div>
+        <div class="grid-input">
         <label for="inputYear">Year</label><br>
-        <input type="number" id="inputYear" value="2000"><br><br>
-    </div>
+        <input type="number" id="inputYear" value="1977" min="1900" max="2900"><br><br>
+        </div>
 
         <input type="button" value="Show Me" onclick="daysInMonth();">
     </form>
-    <p id="daysInMonthResult"></p>
+    <p class="grid-outresult" id="daysInMonthResult"></p>
     <br>
 </div>
 

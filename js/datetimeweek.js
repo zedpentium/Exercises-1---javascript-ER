@@ -403,7 +403,10 @@ function sortNrArray() { // Exercise 15
         var monthInput = document.getElementById("inputMonth").value;
         var yearInput = document.getElementById("inputYear").value;
 
+        var dt = new Date();
+        var month = dt.getMonth() + 1;
+        var year = dt.getFullYear();
+        var daysInMonth = new Date(yearInput, monthInput, 0).getDate();
 
-
-        document.getElementById('daysInMonthResult').innerHTML = outputNrArray;
+        document.getElementById('daysInMonthResult').innerHTML = "Days in above month: " + daysInMonth;
       }
