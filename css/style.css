@@ -1,3 +1,7 @@
+#content {
+    background-color: #364046;
+}
+
 #wrapper {
     position: relative;
     width: 1024px;
@@ -6,19 +10,22 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    background-color: #364046;
 }
 
 .grid-container {
     display: grid;
     grid-gap: 2px 2px;
-    grid-template-columns: 100px 100px 342px;
-    grid-template-rows: 60px 60px 60px 60px;
+    grid-template-columns: 339px 339px 339px;
+    grid-template-rows: 50px 50px 50px 50px;
     grid-template-areas:
     'grid-item-form-headpara grid-item-form-headpara grid-item-form-headpara'
     'grid-item-form-input rid-item-form-input rid-item-form-input'
     'grid-item-form-btnsubmit grid-item-form-btnsubmit grid-item-form-btnsubmit'
 
     'grid-item-form-result grid-item-form-result grid-item-form-result';
+    border: 2px solid black;
+    border-radius: 20px;
 
   }
 
@@ -30,13 +37,15 @@
 
 .grid-headpara {
     grid-area: grid-item-form-headpara;
-    background-color: #1398e6;
+    height: 25px;
+    background-color: #abc2cf;
     border: 1px solid black;
 }
 
 .grid-outresult {
     grid-area: grid-item-form-result;
-    background-color: #1398e6;
+    height: 25px;
+    background-color: #abc2cf;
     border: 1px solid black;
 }
 
@@ -87,4 +96,16 @@
 
 #daysInMonth {
     background-color: rgb(131, 133, 134);
+}
+
+#minutesToHours {
+    background-color: rgb(197, 236, 19);
+}
+
+#ageFromYear {
+    background-color: rgb(204, 211, 175);
+}
+
+#ageFromYear2 {
+    background-color: rgb(255, 168, 6);
 }

@@ -410,3 +410,34 @@ function sortNrArray() { // Exercise 15
 
         document.getElementById('daysInMonthResult').innerHTML = "Days in above month: " + daysInMonth;
       }
+
+
+      function minutesToHours() { // Exercise 19
+        var minToHourInput = document.getElementById("inputminutesToHours").value;
+
+        var hours = (minToHourInput / 60);
+        var mathHours = Math.floor(hours);
+        var minutes = (hours - mathHours) * 60;
+        var mathMminutes = Math.round(minutes);
+        var outputResult =  minToHourInput + " minutes is in hours and minutes = " + mathHours + " hour(s) and " + mathMminutes + " minute(s).";
+
+        document.getElementById('minutesToHoursResult').innerHTML = outputResult;
+      }
+
+
+      function ageFromYear() { // Exercise 20
+        var yearInput = document.getElementById("inputYear").value;
+        const currentDate = new Date();
+        var currentYear = currentDate.getFullYear();
+
+
+        // var millisecDiffToNow = Date.now() - yearInput.getTime(); // Date object
+        //var yearToAge = new Date(millisecDiffToNow); 
+        // Math.abs(yearToAge.getUTCFullYear() - 1970); // millisec from january 1st 1970
+        
+        var outputResult = "Calculating from year " + yearInput + " to present year(" + currentYear + "). Age is then: " + (currentYear - yearInput);
+
+        document.getElementById('ageFromYearResult').innerHTML = outputResult;
+      }
+
+      // End of the Javascript exercises / ER
